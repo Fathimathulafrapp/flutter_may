@@ -34,7 +34,7 @@ class profile  extends StatelessWidget{
               Column(
                 children: [
                   Center(
-                    child: Padding(padding: EdgeInsets.only(top: 10,left: 30,right: 30),
+                    child: Padding(padding: EdgeInsets.only(top: 10,left: 20,right: 20),
                     child: CircleAvatar(radius: 60,
                       child: Image(image: AssetImage("assets/images/rose.png",),),),),
                   ),
@@ -79,7 +79,7 @@ class profile  extends StatelessWidget{
                 ],
               ),
               Container(height: 300,
-                margin: EdgeInsets.only(top: 10,left: 30),
+                margin: EdgeInsets.only(top: 10,left: 20),
                 child: SingleChildScrollView(
                   child: Column(
                     children: [

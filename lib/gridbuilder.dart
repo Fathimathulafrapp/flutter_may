@@ -11,7 +11,12 @@ class grid_builder extends StatelessWidget{
   Widget build(BuildContext context) {
     return Scaffold(
 
-      body: GridView.builder(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
+      body: GridView.builder(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,
+
+          childAspectRatio: 2 / 2,
+          crossAxisSpacing: 10,
+          mainAxisSpacing: 10
+     ),
           itemCount:color.length
           ,itemBuilder: ((context,index){
 
