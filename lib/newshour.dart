@@ -1,6 +1,7 @@
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_may/Catogery.dart';
 
 void main(){
   runApp(MaterialApp(debugShowCheckedModeBanner:false,home: newshour(),));
@@ -252,7 +253,11 @@ class _newshourState extends State<newshour> {
                            padding: const EdgeInsets.only(left: 110,right: 10),
                            child: Icon(Icons.save,color: Colors.white,),
                          ),
-                         Text("Save Data",style: TextStyle(color: Colors.white),)
+                        TextButton(onPressed: (){
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => categry()));
+
+                        }, child:  Text("Save Data",style: TextStyle(color: Colors.white),))
                        ],
                      ),
                    ),
